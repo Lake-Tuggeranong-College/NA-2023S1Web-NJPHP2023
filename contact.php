@@ -33,15 +33,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if (empty($_POST['inputMessage'])) {
         $formError = true;
-        echo "Enter amessage to submit.";
+        echo "Enter a message to submit.";
     }
     if ($formError == false) {
         $emailAddress =$_POST['inputEmail'];
         $messageSubmitted = $_POST['inputMessage'];
 
-        echo $emailAddress;
-        echo "<p>";
-        echo $messageSubmitted;
+       $csvfile = fopen("contact.csv","a");
+       fwrite($csvfile, $emailAddress.",".$messageSubmitted."\n");
+       fclose($csvfile);
     }
 }
 ?>
