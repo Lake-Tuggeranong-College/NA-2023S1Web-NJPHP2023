@@ -1,11 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact us</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-</head>
+<?php include "template.php"?>
+<title>Contact us</title>
 <body>
 <h1>Contact us</h1>
 
@@ -45,6 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+<?php echo footer() ?>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
 </html>
