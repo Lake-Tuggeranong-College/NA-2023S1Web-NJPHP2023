@@ -19,6 +19,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="hello.php" target="_blank">hello</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orderForm.php" >Order Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.php" >Invoice</a>
+                </li>
             </ul>
         </div>
     </div>
