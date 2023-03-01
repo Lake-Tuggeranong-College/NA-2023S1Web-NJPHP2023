@@ -4,7 +4,7 @@
 
 <?php
 if (($handle = fopen("orders.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handel, 1000, ",")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $numberOfRowsOfData = count($data);
         $currentRow++; //Add one to the current row
 
