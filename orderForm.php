@@ -33,19 +33,19 @@
                     <h2>Products</h2>
                     <!--Product List-->
                     <p>Please enter the quantities of each product:</p>
-                    <label for="orderProduct1" class="form-label">Product 1</label>
+                    <label for="orderProduct1" class="form-label">Apple</label>
                     <input type="number" class="form-control" id="orderProduct1" name="orderProduct1"
                            value="0">
-                    <label for="orderProduct2" class="form-label">Product 2</label>
+                    <label for="orderProduct2" class="form-label">Orange</label>
                     <input type="number" class="form-control" id="orderProduct2" name="orderProduct2"
                            value="0">
-                    <label for="orderProduct3" class="form-label">Product 3</label>
+                    <label for="orderProduct3" class="form-label">Peach</label>
                     <input type="number" class="form-control" id="orderProduct3" name="orderProduct3"
                            value="0">
-                    <label for="orderProduct4" class="form-label">Product 4</label>
+                    <label for="orderProduct4" class="form-label">Banana</label>
                     <input type="number" class="form-control" id="orderProduct4" name="orderProduct4"
                            value="0">
-                    <label for="orderProduct5" class="form-label">Product 5</label>
+                    <label for="orderProduct5" class="form-label">Pokemon</label>
                     <input type="number" class="form-control" id="orderProduct5" name="orderProduct5"
                            value="0">
 
@@ -72,7 +72,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prodQuantity4 = sanitiseData($_POST['orderProduct4']);
     $prodQuantity5 = sanitiseData($_POST['orderProduct5']);
 
+    //Replaces negative values with zeros
+    if ($prodQuantity1 < 0){
+        $prodQuantity1 = 0;
+    }
+    if ($prodQuantity2 < 0){
+        $prodQuantity2 = 0;
+    }
+    if ($prodQuantity3 < 0){
+        $prodQuantity3 = 0;
+    }
+    if ($prodQuantity4 < 0){
+        $prodQuantity4= 0;
+    }
+    if ($prodQuantity5 < 0){
+        $prodQuantity5 = 0;
+    }
 
+    //Opens the csv
     $csvFile = fopen("orders.csv", "a");
 // Write the string to the end of the file.
     fwrite($csvFile, $cusNameFirst . "," . $cusNameSecond . "," . $cusAddress . "," . $cusEmail . "," . $cusPhone . "," . $prodQuantity1 . "," . $prodQuantity2 . "," . $prodQuantity3 . "," . $prodQuantity4 . "," . $prodQuantity5 . "," . "\n");
