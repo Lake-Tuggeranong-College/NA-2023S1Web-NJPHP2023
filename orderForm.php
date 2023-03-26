@@ -91,13 +91,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($prodQuantity5 < 0){
         $prodQuantity5 = 0;
     }
+    else{
+        $orderNumber = "1"; //TODO : Fix to generate new one.
+        $custID = "1"; // TODO : Fix to load current custID
+        $productID = "5"; // TODO: load Dynamically
 
-    //Opens the csv
-    $csvFile = fopen("orders.csv", "a");
-// Write the string to the end of the file.
-    fwrite($csvFile, $cusNameFirst . "," . $cusNameSecond . "," . $cusAddress . "," . $cusEmail . "," . $cusPhone . "," . $prodQuantity1 . "," . $prodQuantity2 . "," . $prodQuantity3 . "," . $prodQuantity4 . "," . $prodQuantity5 . "," . "\n");
-// Close the connection to the file.
-    fclose($csvFile);
+        $SQLstmt = $conn->prepare("INSERT INTO order (orderNumber, custID, productID, quantity) VALUES (:orderNumber, :custID, :productID, :quantity)");
+        $SQLstmt->bindParam(':orderNumber', $orderNumber);
+        $SQLstmt->bindParam(':custID', $custID);
+        $SQLstmt->bindParam(':productID', $productID);
+        $SQLstmt->bindParam(':quantity', $prodQuantity5);
+        $SQLstmt->execute();
+    }
+
+//    //Opens the csv
+//    $csvFile = fopen("orders.csv", "a");
+//// Write the string to the end of the file.
+//    fwrite($csvFile, $cusNameFirst . "," . $cusNameSecond . "," . $cusAddress . "," . $cusEmail . "," . $cusPhone . "," . $prodQuantity1 . "," . $prodQuantity2 . "," . $prodQuantity3 . "," . $prodQuantity4 . "," . $prodQuantity5 . "," . "\n");
+//// Close the connection to the file.
+//    fclose($csvFile);
+
+
 
 }
 ?>
