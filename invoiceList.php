@@ -18,7 +18,7 @@
 //    }
 //    fclose($handle);  // Closes the File
 //}
-//
+
 ?>
 <?php //echo footer() ?>
 <a href=""> </a>

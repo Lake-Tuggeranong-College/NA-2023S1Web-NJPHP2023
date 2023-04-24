@@ -17,9 +17,6 @@
                     <a class="nav-link active" aria-current="page" href="contact.php">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="hello.php" target="_blank">hello</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="orderForm.php">Order Form</a>
                 </li>
                 <li class="nav-item">
