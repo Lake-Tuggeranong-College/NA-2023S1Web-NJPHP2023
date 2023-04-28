@@ -61,4 +61,4 @@ Other behaviours to document
 - admin product remove
 # Planning Diagram - Wireframes
 
-![home page wireframe](images/wireframe/)
+![home page wireframe](images/wireframe/homepage.png)
