@@ -30,6 +30,35 @@ Products will have
 
 # Behaviour - User Journey
 
+```mermaid
+journey
+title Login / Log off
+    section Login
+        Load main (home) page: 5: Unauthenticated User
+        Enter login details: 5: Unauthenticated User
+        Press Login Button: 5: Unauthenticated User
+    section Registered
+        Perform site Actions:5: Authenticated User
+    section Logoff
+        Press Logoff Button in Navbar:5: Authenticated User
+        Close Browser:5: Unauthenticated User
+```
 
-
+```mermaid
+journey
+title contact us
+    section Contact Us
+        Load Contact Us page: 5: Any User
+        Enter Email Address: 5: Any User
+        Enter Message: 5: Any User
+        Press submit Button: 5: Any User
+```
+Other behaviours to document
+- invoice
+- ordering
+- admin product add
+- admin product edit
+- admin product remove
 # Planning Diagram - Wireframes
+
+![home page wireframe](images/wireframe/)
