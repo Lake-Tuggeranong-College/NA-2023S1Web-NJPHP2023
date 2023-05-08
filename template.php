@@ -22,10 +22,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="invoiceList.php">Invoice List</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.php">Register</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="register.php">Register</a>-->
+<!--                </li>-->
             </ul>
+            <div class="float-end">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="register.php"><img rel="profile-Pic" src="images/user.png" height="100px"</a>
+            </li>
+            </ul>
+            </div>
         </div>
     </div>
 </nav>
