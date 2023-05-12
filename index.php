@@ -1,8 +1,9 @@
 <?php include "template.php"?>
-<?php include 'login.php'?>
+<?php include "logIn.php"?>
+
     <title>PHP Template</title>
 <body>
-<h1>Starwars Comics.store</h1>
+<h1><em>Starwars Comics.store</em></h1>
 <div class="container-fluid">
     <div class="row">
         <div class="col-6">
@@ -12,7 +13,7 @@
             <p>Password: Luke</p>
         </div>
         <div class="col-6">
-            <?php if (!isset($_SESSION["EmailAddress"])) : ?>
+            <?php if (!isset($_SESSION["email"])) : ?>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                     <div class="form-group">
                         <label>Username</label>
@@ -34,5 +35,5 @@
 
 <?php echo footer() ?>
 </body>
-<script src="js/bootstrap.bundle.min.js"></script>
+
 </html>
