@@ -17,7 +17,7 @@
                     <a class="nav-link active" aria-current="page" href="contact.php">Contact us</a>
                 </li>
                 <?php
-                if (isset($_SESSION["FirstName"])) {
+                if (isset($_SESSION["firstName"])) {
                     echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
                     echo '<li class="nav-item" ><a class="nav-link" href = "invoiceList.php"> Invoice list</a ></li >';
                 } else {
@@ -38,12 +38,12 @@
 <!--                </li>-->
 
             </ul>
-            <div class="float-end">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-            </ul>
-            </div>
         </div>
+        <?php
+        if (isset($_SESSION["firstName"])) {
+            echo '<div class="bg-light">Welcome, ' . $_SESSION["FirstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
+        }
+        ?>
     </div>
 </nav>
 <script src="js/bootstrap.bundle.min.js"></script>
