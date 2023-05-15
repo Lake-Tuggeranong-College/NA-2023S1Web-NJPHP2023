@@ -1,4 +1,5 @@
 <!doctype html>
+<?php session_start(); ?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -25,7 +26,26 @@
                 <a class="nav-link" href="register.php">Register</a>
             </li>';
                 }
+                if (isset($_SESSION["AccessLevel"])) {
+                    if ($_SESSION["AccessLevel"] == 1) {
+//                        echo '123';
+                        ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Product Management
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="productAdd.php">Add Products</a></li>
+                                <li><a class="dropdown-item" href="productList.php">Product List</a></li>
+                            </ul>
+                        </li>
+                        <?php
+                    }
+                }
+
                 ?>
+
 
                 <!--                <li class="nav-item">-->
 <!--                    <a class="nav-link" href="orderForm.php">Order Form</a>-->
@@ -40,9 +60,17 @@
             </ul>
         </div>
         <?php
+//        if (isset($_SESSION["AccessLevel"])) {
+        if ($_SESSION["AccessLevel"] == 2) {
+    echo '123';
+        ?>
+
+        <img src="images/user.png">
+        <?
         if (isset($_SESSION["firstName"])) {
-            echo '<div class="bg-light">Welcome, ' . $_SESSION["FirstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
+            echo '<div class="bg-light">Welcome, ' . $_SESSION["firstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
         }
+        }}
         ?>
     </div>
 </nav>
@@ -69,5 +97,5 @@ function sanitiseData($unsanitisedData) {
     return $sanitisedData;
 }
 
-
+}
 ?>
