@@ -6,74 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-<nav class="navbar navbar-expand-sm bg-success">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.php" ><img rel="home logo" src="https://www.icegif.com/wp-content/uploads/icegif-1304.gif" height="100px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contact.php">Contact us</a>
-                </li>
-                <?php
-                if (isset($_SESSION["firstName"])) {
-                    echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
-                    echo '<li class="nav-item" ><a class="nav-link" href = "invoiceList.php"> Invoice list</a ></li >';
-                } else {
-                    echo '<li class="nav-item">
-                <a class="nav-link" href="register.php">Register</a>
-            </li>';
-                }
-                if (isset($_SESSION["AccessLevel"])) {
-                    if ($_SESSION["AccessLevel"] == 1) {
-//                        echo '123';
-                        ?>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                Product Management
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="productAdd.php">Add Products</a></li>
-                                <li><a class="dropdown-item" href="productList.php">Product List</a></li>
-                            </ul>
-                        </li>
-                        <?php
+    <nav class="navbar navbar-expand-sm bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php" ><img rel="home logo" src="https://www.icegif.com/wp-content/uploads/icegif-1304.gif" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.php">Contact us</a>
+                    </li>
+                    <?php
+                    if (isset($_SESSION["firstName"])) {
+                        echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
+                        echo '<li class="nav-item" ><a class="nav-link" href = "invoiceList.php"> Invoice list</a ></li >';
+                    } else {
+                        echo '<li class="nav-item">
+                    <a class="nav-link" href="register.php">Register</a>
+                </li>';
                     }
-                }
+                    if (isset($_SESSION["AccessLevel"])) {
+                        if ($_SESSION["AccessLevel"] == 1) {
+    //                        echo '123';
+                            ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Product Management
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="addProduct.php">Add Products</a></li>
+                                    <li><a class="dropdown-item" href="productList.php">Product List</a></li>
+                                </ul>
+                            </li>
+                            <?php
+                        }
+                    }
 
-                ?>
+                    ?>
+                </ul>
+            </div>
+            <?php
+            if ($_SESSION["AccessLevel"] == 2) {
 
 
-                <!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="orderForm.php">Order Form</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="invoiceList.php">Invoice List</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="register.php">Register</a>-->
-<!--                </li>-->
 
-            </ul>
+           echo '<img src="images/user.png">';
+            }
+
+            if (isset($_SESSION["firstName"])) {
+                echo '<div class="bg-light">Welcome, ' . $_SESSION["firstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
+            }
+
+            ?>
         </div>
-        <?php
-//        if (isset($_SESSION["AccessLevel"])) {
-        if ($_SESSION["AccessLevel"] == 2) {
-    echo '123';
-        ?>
-
-        <img src="images/user.png">
-        <?
-        if (isset($_SESSION["firstName"])) {
-            echo '<div class="bg-light">Welcome, ' . $_SESSION["firstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
-        }
-        }}
-        ?>
-    </div>
-</nav>
+    </nav>
 <script src="js/bootstrap.bundle.min.js"></script>
 <?php
 
@@ -95,7 +83,7 @@ function sanitiseData($unsanitisedData) {
     $unsanitisedData = stripslashes($unsanitisedData);
     $sanitisedData = htmlspecialchars($unsanitisedData);
     return $sanitisedData;
-}
+
 
 }
 ?>
