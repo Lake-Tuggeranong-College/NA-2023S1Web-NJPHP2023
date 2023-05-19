@@ -22,7 +22,7 @@ if ($_SESSION['AccessLevel'] == 1) {
                 <div class="col-md-6">
                     <h2>Products Details</h2>
                     <p>Product Name<input type="text" name="prodName" class="form-control" required="required"></p>
-                    <p>Product Category
+                    <p>Product Category</p>
 <!--                        <input type="text" name="prodCategory" class="form-control" required="required">-->
                         <select name="prodCategory">
                             <?php
@@ -90,7 +90,7 @@ if ($_SESSION['AccessLevel'] == 1) {
                     //file name is now a unique ID based on time with IMG- preceeding it, followed by the file type.
                     $fileNameNew = uniqid('IMG-', True) . "." . $fileActualExtension;
                     //upload location
-                    $fileDestination = 'images/productImages/' . $fileNameNew;
+                    $fileDestination = 'images/ProductImages/' . $fileNameNew;
                     // Upload file
                     move_uploaded_file($fileTmpName, $fileDestination);
 
@@ -113,4 +113,5 @@ if ($_SESSION['AccessLevel'] == 1) {
             header("location:index.php");
         }
     }
+}
         ?>

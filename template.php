@@ -52,7 +52,7 @@
 
 
 
-           echo '<img src="images/user.png">';
+           echo '<img src="images/user.png" height="150px">';
             }
 
             if (isset($_SESSION["firstName"])) {
@@ -65,7 +65,7 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <?php
 
-session_start();
+//session_start();
 
 $conn = new SQLite3("db") or die("unable to open database");
 
