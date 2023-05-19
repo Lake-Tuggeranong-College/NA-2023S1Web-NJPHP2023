@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="477c0ee3-7143-4643-84c2-9e0b57fa26fc" name="Changes" comment="added a product add page for admins">
-      <change afterPath="$PROJECT_DIR$/editProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/removeProduct.php" afterDir="false" />
+    <list default="true" id="477c0ee3-7143-4643-84c2-9e0b57fa26fc" name="Changes" comment="fixed minor bugs and added an edit and remove funtion to product manegment">
+      <change afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/orderForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orderFormOld.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db" beforeDir="false" afterPath="$PROJECT_DIR$/db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
       <workItem from="1680669639364" duration="361000" />
       <workItem from="1684110033414" duration="1974000" />
       <workItem from="1684285138682" duration="3319000" />
-      <workItem from="1684467986689" duration="4134000" />
+      <workItem from="1684467986689" duration="5765000" />
     </task>
     <task id="LOCAL-00001" summary="added a product add page for admins">
       <created>1684288433662</created>
@@ -69,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684288433662</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed minor bugs and added an edit and remove funtion to product manegment">
+      <created>1684472170988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684472170988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added a product add page for admins" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a product add page for admins" />
+    <MESSAGE value="fixed minor bugs and added an edit and remove funtion to product manegment" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bugs and added an edit and remove funtion to product manegment" />
   </component>
 </project>
