@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="477c0ee3-7143-4643-84c2-9e0b57fa26fc" name="Changes" comment="fixed minor bugs and added an edit and remove funtion to product manegment">
-      <change afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/orderForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderFormOld.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db" beforeDir="false" afterPath="$PROJECT_DIR$/db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orderForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
     </list>
@@ -61,6 +60,7 @@
       <workItem from="1684110033414" duration="1974000" />
       <workItem from="1684285138682" duration="3319000" />
       <workItem from="1684467986689" duration="5765000" />
+      <workItem from="1685494752551" duration="3138000" />
     </task>
     <task id="LOCAL-00001" summary="added a product add page for admins">
       <created>1684288433662</created>

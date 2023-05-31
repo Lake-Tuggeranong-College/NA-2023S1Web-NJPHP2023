@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa4ddeeb-51a7-4cdd-a3b8-26665793a27f" name="Changes" comment="added login crucial navbar edits" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2LQu3WnYHjOnofsNI6CaIVsy9Jw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;SQLite&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa4ddeeb-51a7-4cdd-a3b8-26665793a27f" name="Changes" comment="" />
+      <created>1675815444140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675815444140</updated>
+      <workItem from="1675815445795" duration="1338000" />
+      <workItem from="1675824056397" duration="177000" />
+      <workItem from="1675996945157" duration="5683000" />
+      <workItem from="1676245852705" duration="1000" />
+      <workItem from="1676419638781" duration="2919000" />
+      <workItem from="1676601445667" duration="5470000" />
+      <workItem from="1676848644940" duration="1898000" />
+      <workItem from="1677201594782" duration="1714000" />
+      <workItem from="1677453969172" duration="2023000" />
+      <workItem from="1677629070418" duration="2864000" />
+      <workItem from="1677638177993" duration="228000" />
+      <workItem from="1677811068560" duration="5560000" />
+      <workItem from="1678058202658" duration="1340000" />
+      <workItem from="1678838644779" duration="1161000" />
+      <workItem from="1679021041354" duration="1785000" />
+      <workItem from="1679023374734" duration="3727000" />
+      <workItem from="1679267848729" duration="2520000" />
+      <workItem from="1679443544228" duration="3022000" />
+      <workItem from="1679626136190" duration="722000" />
+      <workItem from="1679872578051" duration="2407000" />
+      <workItem from="1680048314125" duration="2872000" />
+      <workItem from="1680657251704" duration="2382000" />
+      <workItem from="1682295551454" duration="2390000" />
+      <workItem from="1682653341412" duration="892000" />
+      <workItem from="1682654242874" duration="4524000" />
+      <workItem from="1683075887180" duration="1404000" />
+      <workItem from="1683505179413" duration="72000" />
+      <workItem from="1683505262159" duration="1747000" />
+      <workItem from="1683680625293" duration="2449000" />
+      <workItem from="1683704922189" duration="3541000" />
+      <workItem from="1683863049143" duration="4501000" />
+    </task>
+    <task id="LOCAL-00001" summary="footer code">
+      <created>1675998902722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675998902722</updated>
+    </task>
+    <task id="LOCAL-00002" summary="index update">
+      <created>1675998925566</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675998925566</updated>
+    </task>
+    <task id="LOCAL-00003" summary="index update">
+      <created>1675998978074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675998978074</updated>
+    </task>
+    <task id="LOCAL-00004" summary="saniteses data">
+      <created>1675999628055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675999628055</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed body">
+      <created>1675999644132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675999644132</updated>
+    </task>
+    <task id="LOCAL-00006" summary="named function">
+      <created>1676000344099</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676000344099</updated>
+    </task>
+    <task id="LOCAL-00007" summary="just ughhhh">
+      <created>1676002593262</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676002593262</updated>
+    </task>
+    <task id="LOCAL-00008" summary="impruved imput and output function">
+      <created>1676422375920</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676422375920</updated>
+    </task>
+    <task id="LOCAL-00009" summary="save contact to csv">
+      <created>1676605847963</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676605847963</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added a nav bar">
+      <created>1676608009270</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676608009270</updated>
+    </task>
+    <task id="LOCAL-00011" summary="created the order form">
+      <created>1677454658768</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677454658768</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added an invoice">
+      <created>1677455987890</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677455987890</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixed a spelling mistake">
+      <created>1677629339699</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677629339699</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added a list of invoices">
+      <created>1677816565868</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677816565868</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added a list of invoices">
+      <created>1678059721887</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678059721887</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added a Data Base">
+      <created>1679023517203</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679023517203</updated>
+    </task>
+    <task id="LOCAL-00017" summary=" commit of design.md">
+      <created>1680659593004</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680659593004</updated>
+    </task>
+    <task id="LOCAL-00018" summary=" commit of design.md">
+      <created>1682297776187</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682297776187</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added a journy for login and contact">
+      <created>1682657943793</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682657943793</updated>
+    </task>
+    <task id="LOCAL-00020" summary="created a better nave bar look">
+      <created>1683507539745</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683507539745</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added login crucial navbar edits">
+      <created>1683867509948</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1683867509948</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init templet and index" />
+    <MESSAGE value="footer code" />
+    <MESSAGE value="index update" />
+    <MESSAGE value="saniteses data" />
+    <MESSAGE value="fixed body" />
+    <MESSAGE value="named function" />
+    <MESSAGE value="just ughhhh" />
+    <MESSAGE value="impruved imput and output function" />
+    <MESSAGE value="save contact to csv" />
+    <MESSAGE value="added a nav bar" />
+    <MESSAGE value="created the order form" />
+    <MESSAGE value="added an invoice" />
+    <MESSAGE value="fixed a spelling mistake" />
+    <MESSAGE value="added a list of invoices" />
+    <MESSAGE value="added a Data Base" />
+    <MESSAGE value=" commit of design.md" />
+    <MESSAGE value="added a journy for login and contact" />
+    <MESSAGE value="created a better nave bar look" />
+    <MESSAGE value="added login crucial navbar edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login crucial navbar edits" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

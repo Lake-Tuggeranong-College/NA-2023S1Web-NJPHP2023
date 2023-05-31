@@ -11,10 +11,10 @@ $status = "";
 if (isset($_POST['Code']) && $_POST['Code'] != "") {
     $code = $_POST['Code'];
     $row = $conn->querySingle("SELECT * FROM product WHERE Code='$code'", true);
-    $name = $row['ProductName'];
-    $price = $row['Price'];
+    $name = $row['productName'];
+    $price = $row['productPrice'];
     $image = $row['Image'];
-    $id = $row['ProductID'];
+    $id = $row['productID'];
 
     $cartArray = array(
         $code => array(
@@ -56,8 +56,12 @@ if (!empty($_SESSION["ShoppingCart"])) {
     $cart_count = count(array_keys($_SESSION["ShoppingCart"]));
     ?>
     <div class="cart_div">
-        <a href="cart.php"><img src="images/cart-icon.png"/> Cart<span>
-<?php echo $cart_count; ?></span></a>
+        <span>
+<?php echo $cart_count; ?></span>
+        <br>
+        <a href="cart.php"><img src="images/cart-icon.png" height="50px"/></a>
+<!--            <span>-->
+<?php //echo $cart_count; ?><!--</span></a>-->
     </div>
     <?php
 }

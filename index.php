@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-6">
             <p>username: exemple@email.com</p>
-            <p>Password: password</p>
+            <p>Password: Password</p>
             <p>username: Obi@wan.com</p>
             <p>Password: Luke</p>
         </div>

@@ -18,7 +18,7 @@
 //echo '<pre>'; print_r($_SESSION["ShoppingCart"]); echo '</pre>';
 
 
-if (isset($_SESSION["FirstName"])) {
+if (isset($_SESSION["firstName"])) {
 date_default_timezone_set("Australia/Sydney");
 $status = "";
 if (isset($_POST['action']) && $_POST['action'] == "remove") {
@@ -134,7 +134,7 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
             $orderDate = date("Y-m-d h:i:sa");
 
             // Write to the Db.
-            $conn->exec("INSERT INTO "order" (orderNumber,custID, productID, OrderDate, quantity) VALUES('$orderNumber','$customerID','$productID','$orderDate', '$quantity')");
+            $conn->exec("INSERT INTO 'order' (orderNumber,custID, productID, OrderDate, quantity) VALUES('$orderNumber','$customerID','$productID','$orderDate', '$quantity')");
 
         }
         $_SESSION["ShoppingCart"] = [];

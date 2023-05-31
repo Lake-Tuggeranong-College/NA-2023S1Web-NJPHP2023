@@ -19,7 +19,7 @@
                     </li>
                     <?php
                     if (isset($_SESSION["firstName"])) {
-                        echo '<li class="nav-item" ><a class="nav-link" href = "orderFormOld.php"> Order Form </a ></li >';
+                        echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
                         echo '<li class="nav-item" ><a class="nav-link" href = "invoiceList.php"> Invoice list</a ></li >';
                     } else {
                         echo '<li class="nav-item">
@@ -49,10 +49,10 @@
             </div>
             <?php
             if ($_SESSION["AccessLevel"] == 2) {
-
-
-
            echo '<img src="images/user.png" height="150px">';
+            }
+            if ($_SESSION["AccessLevel"] == 1) {
+                echo '<img src="images/admin.png" height="100px"><h>   </h>';
             }
 
             if (isset($_SESSION["firstName"])) {
