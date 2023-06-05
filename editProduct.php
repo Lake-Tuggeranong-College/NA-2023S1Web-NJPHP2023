@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 //file name is now a unique ID based on time with IMG- preceeding it, followed by the file type.
                 $fileNameNew = uniqid('IMG-', True) . "." . $fileActualExtension;
                 //upload location
-                $fileDestination = 'images/productImages/' . $fileNameNew;
+                $fileDestination = 'images/ProductImages/' . $fileNameNew;
                 // Upload file
                 move_uploaded_file($fileTmpName, $fileDestination);
 

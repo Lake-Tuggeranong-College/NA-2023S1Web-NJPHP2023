@@ -20,7 +20,7 @@
                     <?php
                     if (isset($_SESSION["firstName"])) {
                         echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
-                        echo '<li class="nav-item" ><a class="nav-link" href = "invoiceList.php"> Invoice list</a ></li >';
+                        echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice</a ></li >';
                     } else {
                         echo '<li class="nav-item">
                     <a class="nav-link" href="register.php">Register</a>
@@ -62,6 +62,21 @@
             ?>
         </div>
     </nav>
+<?php
+if (isset($_SESSION['flash_message'])) {
+    $message = $_SESSION['flash_message'];
+    unset($_SESSION['flash_message']);
+//    echo $message;
+    ?>
+    <div class="position-absolute bottom-0 end-0">
+        <?= $message ?>
+
+    </div>
+
+
+    <?php
+}
+?>
 <script src="js/bootstrap.bundle.min.js"></script>
 <?php
 
