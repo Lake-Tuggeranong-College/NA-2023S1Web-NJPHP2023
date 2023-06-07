@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="477c0ee3-7143-4643-84c2-9e0b57fa26fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/invoice.php.old" afterDir="false" />
+    <list default="true" id="477c0ee3-7143-4643-84c2-9e0b57fa26fc" name="Changes" comment="fixed image problem and started on a new invoice page">
+      <change afterPath="$PROJECT_DIR$/detailes.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db" beforeDir="false" afterPath="$PROJECT_DIR$/db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/editProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoiceList.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/logIn.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,8 @@
       <workItem from="1684285138682" duration="3319000" />
       <workItem from="1684467986689" duration="5765000" />
       <workItem from="1685494752551" duration="3293000" />
-      <workItem from="1685924231838" duration="2164000" />
+      <workItem from="1685924231838" duration="2512000" />
+      <workItem from="1686099536911" duration="3407000" />
     </task>
     <task id="LOCAL-00001" summary="added a product add page for admins">
       <created>1684288433662</created>
@@ -88,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685498018354</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed image problem and started on a new invoice page">
+      <created>1685926661010</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685926661010</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +102,7 @@
     <MESSAGE value="added a product add page for admins" />
     <MESSAGE value="fixed minor bugs and added an edit and remove funtion to product manegment" />
     <MESSAGE value="fixed minif ($_SESSION[&quot;AccessLevel&quot;] == 2) {&#10;                    echo '&lt;img src=&quot;images/user.png&quot; height=&quot;150px&quot;&gt;';&#10;                     }ore bug in cart.php and added a user pic for admins" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed minif ($_SESSION[&quot;AccessLevel&quot;] == 2) {&#10;                    echo '&lt;img src=&quot;images/user.png&quot; height=&quot;150px&quot;&gt;';&#10;                     }ore bug in cart.php and added a user pic for admins" />
+    <MESSAGE value="fixed image problem and started on a new invoice page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed image problem and started on a new invoice page" />
   </component>
 </project>

@@ -128,7 +128,7 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
         // Writing the order to the database
         $orderNumber = "ORDER" . substr(md5(uniqid(mt_rand(), true)), 0, 8);
         foreach ($_SESSION["ShoppingCart"] as $row) {
-            $customerID = $_SESSION["CustomerID"];
+            $customerID = $_SESSION["CustID"];
             $productID = $row['id'];
             $quantity = $row['quantity'];
             $orderDate = date("Y-m-d h:i:sa");

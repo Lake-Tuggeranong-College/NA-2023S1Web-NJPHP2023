@@ -19,8 +19,8 @@ if (!isset($_SESSION["custID"])) {
     if (empty($_GET["order"])) {
     // Case 2 - no 'order' variable detected in the url.
         $custID = $_SESSION['custID'];
-        $query = $conn->query("SELECT OrderNumber FROM 'order' WHERE custID='$custID' AND Status='OPEN'");
-        $count = $conn->querySingle("SELECT OrderNumber FROM 'order' WHERE custID='$custID' AND status='OPEN'");
+        $query = $conn->query("SELECT orderNumber FROM 'order' WHERE custID='$custID' AND Status='OPEN'");
+        $count = $conn->querySingle("SELECT orderNumber FROM 'order' WHERE custID='$custID' AND Status='OPEN'");
         $orderCodesForUser = [];
 
         if ($count > 0) {  // Has the User made orders previously?

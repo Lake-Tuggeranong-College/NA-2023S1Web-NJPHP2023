@@ -14,8 +14,16 @@ if (isset($_POST['login'])) {
             $_SESSION['firstName'] = $row['firstName'];
             $_SESSION['email'] = $row['email'];
             $_SESSION['AccessLevel'] = $row['AccessLevel'];
+            $_SESSION['custID'] = $row ['custID'];
+            $_SESSION["flash_message"] = "<div class='dg-danger'>Login Successful</div>";
+            header("location:index.php");
+        }else{
+            echo "<div class='alert alert-danger'>Invalid Email or Password</div>";
+            $_SESSION["flash_message"] = "<div class='dg-danger'>Invalid Email or Password</div>";
             header("location:index.php");
         }
+    }else{
+        echo "<div class='alert alert-danger'>Invalid Email or Password</div>";
     }
 }
     ?>
