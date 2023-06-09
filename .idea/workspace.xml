@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="477c0ee3-7143-4643-84c2-9e0b57fa26fc" name="Changes" comment="fixed image problem and started on a new invoice page">
-      <change afterPath="$PROJECT_DIR$/detailes.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db" beforeDir="false" afterPath="$PROJECT_DIR$/db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/logIn.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +60,8 @@
       <workItem from="1685494752551" duration="3293000" />
       <workItem from="1685924231838" duration="2512000" />
       <workItem from="1686099536911" duration="3407000" />
+      <workItem from="1686275583596" duration="6000" />
+      <workItem from="1686282054295" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="added a product add page for admins">
       <created>1684288433662</created>
