@@ -21,12 +21,12 @@ if (!isset($_SESSION["CustomerID"])) {
 
         if ($_SESSION["AccessLevel"] == 1) {
             // Case 5 - Generate a list of all invoices for administrators
-            $query = $conn->query("SELECT OrderNumber FROM Orders");
-            $count = $conn->querySingle("SELECT OrderNumber FROM Orders");
+            $query = $conn->query("SELECT OrderNumber FROM order");
+            $count = $conn->querySingle("SELECT OrderNumber FROM order");
         } else {
             // Case 2 - Generate a list of open invoices for user
-            $query = $conn->query("SELECT OrderNumber FROM Orders WHERE CustomerID='$custID' AND Status='OPEN'");
-            $count = $conn->querySingle("SELECT OrderNumber FROM Orders WHERE customerID='$custID' AND status='OPEN'");
+            $query = $conn->query("SELECT OrderNumber FROM order WHERE custID='$custID' AND Status='OPEN'");
+            $count = $conn->querySingle("SELECT OrderNumber FROM order WHERE custID='$custID' AND status='OPEN'");
         }
 
         $orderCodesForUser = [];
@@ -57,7 +57,7 @@ if (!isset($_SESSION["CustomerID"])) {
     } else {
         // Case 3 - 'order' variable detected.
         $orderNumber = $_GET["order"];
-        $query = $conn->query("SELECT p.ProductName, p.Price, o.Quantity, p.Price*o.Quantity as SubTotal, o.OrderDate, o.Status FROM Orders o INNER JOIN Products p on o.ProductID = p.ProductID WHERE o.OrderNumber='$orderNumber'");
+        $query = $conn->query("SELECT p.productName, p.productPrice, o.quantity, p.productPrice*o. uantity as SubTotal, o.OrderDate, o.Status FROM order o INNER JOIN products p on o.productID = p.productID WHERE o.orderNumber='$orderNumber'");
         $total = 0;
         ?>
         <div class='container-fluid'>
@@ -132,8 +132,6 @@ if (!isset($_SESSION["CustomerID"])) {
  *
  *
  *
-
-
-
+ *
 
  */
