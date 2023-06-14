@@ -11,22 +11,22 @@ include "template.php";
  */
 /**  @var $conn */
 
-if (!isset($_SESSION["CustomerID"])) {
+if (!isset($_SESSION["custID"])) {
     // Case 1. The user is not logged in.
     header("Location:index.php");
 } else {
     if (empty($_GET["order"])) {
         // no 'order' variable detected in the url.
-        $custID = $_SESSION['CustomerID'];
+        $custID = $_SESSION['custID'];
 
         if ($_SESSION["AccessLevel"] == 1) {
             // Case 5 - Generate a list of all invoices for administrators
-            $query = $conn->query("SELECT OrderNumber FROM order");
-            $count = $conn->querySingle("SELECT OrderNumber FROM order");
+            $query = $conn->query("SELECT orderNumber FROM 'order'");
+            $count = $conn->querySingle("SELECT orderNumber FROM 'order'");
         } else {
             // Case 2 - Generate a list of open invoices for user
-            $query = $conn->query("SELECT OrderNumber FROM order WHERE custID='$custID' AND Status='OPEN'");
-            $count = $conn->querySingle("SELECT OrderNumber FROM order WHERE custID='$custID' AND status='OPEN'");
+            $query = $conn->query("SELECT orderNumber FROM 'order' WHERE custID='$custID' AND Status='OPEN'");
+            $count = $conn->querySingle("SELECT orderNumber FROM 'order' WHERE custID='$custID' AND Status='OPEN'");
         }
 
         $orderCodesForUser = [];
@@ -44,7 +44,7 @@ if (!isset($_SESSION["CustomerID"])) {
             foreach ($unique_orders as $order_ID) {
                 ?>
                 <div class='row'>
-                    <div class='col-12'><a href='invoice.php?order=<?= $order_ID ?>'>Order : <?= $order_ID ?></a></div>
+                    <div class='col-12'><a href='invoice.php?order=<?= $order_ID ?>'>order : <?= $order_ID ?></a></div>
                 </div>
                 <?php
             }
@@ -57,7 +57,7 @@ if (!isset($_SESSION["CustomerID"])) {
     } else {
         // Case 3 - 'order' variable detected.
         $orderNumber = $_GET["order"];
-        $query = $conn->query("SELECT p.productName, p.productPrice, o.quantity, p.productPrice*o. uantity as SubTotal, o.OrderDate, o.Status FROM order o INNER JOIN products p on o.productID = p.productID WHERE o.orderNumber='$orderNumber'");
+        $query = $conn->query("SELECT p.productName, p.productPrice, o.quantity, p.productPrice*o. quantity as SubTotal, o.OrderDate, o.Status FROM 'order' o INNER JOIN 'product' p on o.productID = p.productID WHERE o.orderNumber='$orderNumber'");
         $total = 0;
         ?>
         <div class='container-fluid'>
@@ -71,9 +71,9 @@ if (!isset($_SESSION["CustomerID"])) {
         <?php
         while ($data = $query->fetchArray()) {
             echo "<div class='row'>";
-            $productName = $data["ProductName"];
-            $price = $data["Price"];
-            $quantity = $data["Quantity"];
+            $productName = $data["productName"];
+            $price = $data["productPrice"];
+            $quantity = $data["quantity"];
             $subtotal = $data["SubTotal"];
             $orderDate = $data["OrderDate"];
             $status = $data["Status"];
@@ -100,17 +100,17 @@ if (!isset($_SESSION["CustomerID"])) {
 
         <?php
         if ($_SESSION["AccessLevel"] == 1) {
-            if (!empty($_GET["status"])) {
-                if ($_GET["status"] == "CLOSED") {
-                    $conn->exec("UPDATE order SET status='CLOSED' WHERE orderNumber='$orderNumber'");
+            if (!empty($_GET["Status"])) {
+                if ($_GET["Status"] == "CLOSED") {
+                    $conn->exec("UPDATE 'order' SET status='CLOSED' WHERE orderNumber='$orderNumber'");
                     $orderMessage = "Order #:" . $orderNumber . " has been closed";
                 } else {
-                    $conn->exec("UPDATE order SET status='OPEN' WHERE orderNumber='$orderNumber'");
+                    $conn->exec("UPDATE 'order' SET status='OPEN' WHERE orderNumber='$orderNumber'");
                     $orderMessage = "Order #:" . $orderNumber . " has been re-opened";
                 }
             }
 
-            $query=$conn->query("SELECT Status from order WHERE orderNumber='$orderNumber'");
+            $query=$conn->query("SELECT Status from 'order' WHERE orderNumber='$orderNumber'");
             $data=$query->fetchArray();
             $status=$data["Status"];
 
