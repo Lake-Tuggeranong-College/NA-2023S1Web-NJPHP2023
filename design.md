@@ -53,12 +53,41 @@ title contact us
         Enter Message: 5: Any User
         Press submit Button: 5: Any User
 ```
-Other behaviours to document
-- invoice
-- ordering
-- admin product add
-- admin product edit
-- admin product remove
+```mermaid
+journey
+title Order
+    section Order Form
+        Load Order Form page: 5: Any User
+        select products: 5: Any User
+        click cart image: 5: Any User
+        section Cart
+            edit cart details: 5: Any User
+            press order now: 5: Any User
+```
+```mermaid
+journey
+title Invoice
+    section Invoice
+        Load Invoice page: 5: Any User
+        select the desired Invoice: 5: Any User
+```
+```mermaid
+journey
+title Product add
+    section Product add
+        Load Product add page: 5: Admin User
+        Enter product details: 5: Admin User
+        Submit product: 5: Admin User
+```
+```mermaid
+journey
+title Product edit
+    section Product edit
+        Load Product edit page: 5: Admin User
+        Select product to edit: 5: Admin User
+        Edit product details: 5: Admin User
+        Submit product changers: 5: Admin User
+```
 # Planning Diagram - Wireframes
 
 ![home page wireframe](images/wireframe/homepage.png)
